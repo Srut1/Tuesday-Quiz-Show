@@ -1,0 +1,250 @@
+
+/* Sruti Nukala
+nukalas
+Created Feburary 25, 2026
+Style page */
+#gameContainer {
+    position: relative;
+    width: 440px;
+    height: 560px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+.container {
+    background-image: url('../Images/showbg.jpg');
+    background-repeat: no-repeat;
+    width: 440px;
+    height: 560px;
+    border: 2px solid black;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#startButton {
+    position: absolute;
+    left: 100px;
+    right: 100px;
+    bottom: 200px;
+    background-color: darkred;
+    color: lightgoldenrodyellow;
+    border: none;
+    font-size: 30px;
+    font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+}
+
+#helpButton{
+     position: absolute;
+    left: 150px;
+    right: 150px;
+    bottom: 150px;
+    background-color: darkred;
+    color: lightgoldenrodyellow;
+    border: none;
+    font-size: 30px;
+    font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+}
+
+#startButton:hover, #helpButton:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 5px darkred;
+    transform: translateY(-5px);
+    transition: transform 500ms;
+}
+
+#dialogueBox {
+    display: none;
+    /* hidden by default */
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#dialogue {
+    margin: 0 0 8px 0;
+    min-height: 40px;
+}
+
+#nextButton {
+    float: right;
+}
+
+#question {
+    color: lightgoldenrodyellow;
+    font-family: 'Didot', 'serif';
+}
+
+.choice-container {
+    border: 1px solid darkred;
+    padding: 10px;
+
+    background-color: lightgoldenrodyellow;
+}
+
+.choice-text {
+    color: darkred;
+    text-align: center;
+}
+
+.correct {
+    background-color: darkgreen;
+}
+
+.incorrect {
+    background-color: darkred;
+    color: white;
+}
+
+#hud {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hud-prefix {
+    text-align: center;
+}
+
+#progressBar {
+    border: 2px solid darkred;
+    width: 100px;
+    height: 20px;
+}
+
+#progress-bar {
+    height: 20px;
+    background-color: darkred;
+    width: 0%;
+} 
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#username {
+    padding: 10px;
+    border: none;
+    font-size: 30px;
+    box-shadow: 0 5px 5px darkred;
+}
+
+.btn{
+    background-color: darkred;
+    color: lightgoldenrodyellow;
+    border: none;
+    font-size: 30px;
+    font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn:hover,
+.backbtn:hover, .textButton:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 5px darkred;
+    transform: translateY(-5px);
+    transition: transform 500ms;
+}
+
+.btn[disabled]:hover,
+.backbtn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.high-score {
+    list-style: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+.backbtn {
+    align-items: center;
+    background-color: darkred;
+    color: lightgoldenrodyellow;
+    border: none;
+    font-size: 30px;
+    font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+    text-align: center;
+}
+
+#timerBar {
+    border: 2px solid darkred;
+    width: 200px;
+    height: 20px;
+}
+
+#timer-bar {
+    height: 20px;
+    background-color: darkgreen;
+    width: 100%;
+    transition: width 1s linear, background-color 1s;
+}
+
+#gameOverScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: lightgoldenrodyellow;
+    font-size: 48px;
+    font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+    text-shadow: 2px 2px 8px black;
+    text-align: center;
+    z-index: 10;
+}
+
+li {
+    list-style: none;
+}
+
+#help-text{
+    background-color: darkred;
+    color: lightgoldenrodyellow;
+    position: absolute;
+    top: 50px;
+     border-radius: 12px;
+     margin: 2px;
+     padding: 2px;
+}
+
+.textButton{
+    background-color: darkred;
+    color: lightgoldenrodyellow;
+    border: none;
+    font-size: 30px;
+    font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+}
+
+.textButtonP{
+    font-size: 20px;
+    font-family: 'Didot', 'serif';
+}
+
+#highScoresList{
+    color: lightgoldenrodyellow;
+    margin: 20px;
+    background-color: darkred;
+    border-radius: 12px;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
