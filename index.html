@@ -1,0 +1,50 @@
+<!doctype html>
+<!-- 
+Sruti Nukala
+nukalas
+Created Feburary 25, 2026
+Splash page of game
+  -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tuesday Quiz Show</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="icon" type="image/png" href="Images/braun.png">
+    <script src="Javascript/trivia.js"></script>
+
+</head>
+
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="440" height="560"> </canvas>
+        <input type="button" value="Start" id="startButton">
+        <input type="button" value="Help" id="helpButton">
+        <div id="help-text" style="display:none;">
+            <div class="help">
+                <p><strong>Welcome to the Tuesday Quiz Show!!</strong></p>
+                <p>We welcome all contestants to our highly anticipated, ever popular quiz show!</p>
+
+                <ul><strong>Gameplay</strong></ul>
+                <li> There will be 3 stages of difficulty with 4 questions each, with increasing difficulty questions giving more points and less time to answer them.</li>
+                <li> Easy: 15 seconds and 25 points</li>
+                <li> Medium: 10 seconds and 50 points</li>
+                <li> Hard: 7 seconds and 100 points</li>
+                <li> But beware! Getting a single answer wrong, or letting the timer run out results in a loss.</li>
+                <li> The top 5 contestants will be shown on the Highscore Board!</li>
+            </div>
+        </div>
+        <audio id="bgm" loop>
+            <source src="Sound/bgm.mp3" type="audio/mpeg">
+        </audio>
+        <div id="dialogueBox">
+            <p id="dialogue"></p>
+            <input type="button" value="Next" id="nextButton" hidden>
+
+        </div> 
+    </div>
+</body>
+
+</html>
