@@ -1,5 +1,3 @@
-// Sruti Nukala
-// nukalas
 // Created Feburary 25, 2026
 // Javascript for ending game page
 
